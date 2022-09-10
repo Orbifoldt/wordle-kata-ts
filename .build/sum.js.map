@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../sum.ts"],
+  "sourcesContent": ["function sum(a: number, b: number): number {\n  return a + b\n}\n\nexport default sum"],
+  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAAA,aAAa,GAAW,GAAmB;AACzC,SAAO,IAAI;AAAA;AAGb,IAAO,cAAQ;",
+  "names": []
+}
