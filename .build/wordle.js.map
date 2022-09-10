@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../wordle.ts"],
-  "sourcesContent": ["export function score(secret: string, guess: string): number[] {\n  let secretWord = secret\n  let result: number [] = new Array(5);\n  for (let i = 0; i < guess.length; i++) {\n    if (secretWord[i] === guess[i]) {\n      result[i] = 2;\n      secretWord = secretWord.replace(secretWord.charAt(i), \"#\")\n    }\n    else if(secretWord.includes(guess[i])) {\n      result[i] = 1;\n    }\n    else {\n      result[i] = 0;\n    }\n  }\n  return result\n}\n"],
-  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAAO,eAAe,QAAgB,OAAyB;AAC7D,MAAI,aAAa;AACjB,MAAI,SAAoB,IAAI,MAAM;AAClC,WAAS,IAAI,GAAG,IAAI,MAAM,QAAQ,KAAK;AACrC,QAAI,WAAW,OAAO,MAAM,IAAI;AAC9B,aAAO,KAAK;AACZ,mBAAa,WAAW,QAAQ,WAAW,OAAO,IAAI;AAAA,eAEhD,WAAW,SAAS,MAAM,KAAK;AACrC,aAAO,KAAK;AAAA,WAET;AACH,aAAO,KAAK;AAAA;AAAA;AAGhB,SAAO;AAAA;",
-  "names": []
-}

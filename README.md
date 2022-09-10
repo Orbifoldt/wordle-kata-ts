@@ -1,4 +1,7 @@
 # Wordle kata
+A kata is a small coding exercise that we use to train our test-driven development (TDD) skills. We usely work together with a small group of people in a [Coding Dojo](https://codingdojo.org/practices/WhatIsCodingDojo/) in order to together solve the kata.
+
+This was created using Replit to introduce my team at ABN AMRO to typescript, see [https://replit.com/@JeroenABN/LivelyPuzzledSweepsoftware](https://replit.com/@JeroenABN/LivelyPuzzledSweepsoftware).
 
 ## Scoring
 

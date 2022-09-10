@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../wordle.test.ts"],
-  "sourcesContent": ["import {score} from \"./wordle\"\n\nconst secret: string = \"allow\";\n\ntest(\"correct guess should return array of 2's\", () => { \n  const guess: string = \"allow\";\n  const result: number[] = [2, 2, 2, 2, 2];\n  expect(score(secret, guess)).toEqual(result)\n});\n\ntest(\"totally incorrect guess should return array of 0's\", () => {\n  const guess: string = \"bcdef\";\n  const result: number[] = [0, 0, 0, 0, 0];\n  expect(score(secret, guess)).toEqual(result)\n});\n\ntest(\"guess with correct letter at wrong order should return an array of 1's\", () => {\n  const guess: string = \"woall\";\n  const result: number[] = [1, 1, 1, 1, 1];\n  expect(score(secret, guess)).toEqual(result);\n});\n\ntest(\"if a guessed letter is marked as correct, it should not be used for further scoring\", () => {\n  const guess: string = \"aaaaa\";\n  const result: number[] = [2, 0, 0, 0, 0];\n  expect(score(secret, guess)).toEqual(result);\n})"],
-  "mappings": ";;;;;;;;;;;;;;;;;;AAAA,oBAAoB;AAEpB,MAAM,SAAiB;AAEvB,KAAK,4CAA4C,MAAM;AACrD,QAAM,QAAgB;AACtB,QAAM,SAAmB,CAAC,GAAG,GAAG,GAAG,GAAG;AACtC,SAAO,yBAAM,QAAQ,QAAQ,QAAQ;AAAA;AAGvC,KAAK,sDAAsD,MAAM;AAC/D,QAAM,QAAgB;AACtB,QAAM,SAAmB,CAAC,GAAG,GAAG,GAAG,GAAG;AACtC,SAAO,yBAAM,QAAQ,QAAQ,QAAQ;AAAA;AAGvC,KAAK,0EAA0E,MAAM;AACnF,QAAM,QAAgB;AACtB,QAAM,SAAmB,CAAC,GAAG,GAAG,GAAG,GAAG;AACtC,SAAO,yBAAM,QAAQ,QAAQ,QAAQ;AAAA;AAGvC,KAAK,uFAAuF,MAAM;AAChG,QAAM,QAAgB;AACtB,QAAM,SAAmB,CAAC,GAAG,GAAG,GAAG,GAAG;AACtC,SAAO,yBAAM,QAAQ,QAAQ,QAAQ;AAAA;",
-  "names": []
-}

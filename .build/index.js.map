@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../index.ts"],
-  "sourcesContent": ["import sum from \"./sum\";\n\nconsole.log(sum(1,2))"],
-  "mappings": ";;;;;;;;;;;;;;;;;;AAAA,iBAAgB;AAEhB,QAAQ,IAAI,wBAAI,GAAE;",
-  "names": []
-}
